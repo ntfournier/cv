@@ -4,168 +4,374 @@
 \usepackage{fancyhdr}  % use this package to get a 2 line header
 \usepackage[utf8]{inputenc}
 \renewcommand{\headrulewidth}{0pt} % suppress line drawn by default by fancyhdr
+\newcommand{\inFrench}[1]{#1}
+\newcommand{\inEnglish}[1]{}
 \setlength{\headheight}{24pt} % allow room for 2-line header
-\setlength{\headsep}{24pt}  % space between header and text
+\setlength{\headsep}{16pt}  % space between header and text
 \setlength{\headheight}{24pt} % allow room for 2-line header
 \pagestyle{fancy}
 \rhead{ {\it Vincent Fournier}\\{\it p. \thepage} }
 \cfoot{}
-\topmargin=-0.5in
+\topmargin=-0.7in
 
 \begin{document}
 \thispagestyle{empty} % this page has no header
 
 {\bf\huge Vincent Fournier}
-\hfill vince@ntfournier.com \\
-Étudiant en génie logiciel à l’École de technologie supérieure.
-\hfill 514-949-8462 \\
-...  \hfill \textbf {github}: ntfournier
+\inFrench{
+	\hfill \textbf {github.com/ntfournier} \\
+	Étudiant en génie logiciel à l’École de technologie supérieure.
+	\hfill \textbf {vince@ntfournier.com} \\
+	Disponible pour stage universitaire 3 en \textbf{mai 2016} pour une durée 4 ou 8 mois.
+	\hfill \textbf {tel}: 514-949-8462 \\
+}
+\inEnglish{
+	\hfill \textbf {github.com/ntfournier} \\
+	Software engineering student at l'École de technologie supérieure.
+	\hfill \textbf {vince@ntfournier.com} \\
+	Available for third university internship in \textbf{May 2016} for a length 4 or 8 months.
+	\hfill \textbf {tel}: 514-949-8462 \\
+}
+\vspace{-15pt}
 
 \begin{resume}
-
 % --------------------------------
 \section{Formation}
-\vspace{8pt}
+\vspace{6pt}
 
-{\sl Baccalauréat en génie logiciel}, \\
-École de technologie supérieure (ÉTS), Montréal
-\hfill Depuis septembre 2013
+\inFrench{
+	% Bacc
+	École de technologie supérieure (ÉTS), Montréal
+	\hfill Depuis septembre 2013 \\
+	{\sl Baccalauréat en génie logiciel}
 
+	% Cegep
+	Cégep de Saint-Jean-sur-Richelieu, Saint-Jean-sur-Richelieu
+	\hfill 2010-2013 \\
+	{\sl Technique en informatique de gestion}
+}
+\inEnglish{
+	% Bacc
+	École de technologie supérieure (ÉTS), Montreal
+	\hfill Since September 2013 \\
+	{\sl Bachelor in Software Engineering}
 
-{\sl Technique en informatique de gestion}, \\
-Cégep de Saint-Jean-sur-Richelieu
-\hfill 2010-2013
-
-\vspace{0.1in}
-
-% --------------------------------
-\section{Experiences professionelles}
-\vspace{8pt}
-
-{\sl Savoir-faire Linux, Montréal}
-\hfill mai à septembre 2015 \\
-Développeur \hfill (Stage universitaire 2)
-
-\begin{itemize} \itemsep -2pt % reduce space between items
-	\item Développement d'une solution Python de "Monitoring as a Service" pour Openstack;
-	\item Maintient et développement d'une application AngularJs avec des vues configurables;
-	\item Création de paquets RPM (RedHat) pour l'installation de la solution;
-	\item Participation à une processus agile.
-\end{itemize}
-
-
-{\sl Jabez Technologies, Montréal}
-\hfill janvier à avril 2014 \\
-Développeur web \hfill (Stage universitaire 1)
-
-\begin{itemize} \itemsep -2pt
-	\item Conversion d’un site web en PHP vers une application web moderne en JavaScript avec NodeJs et AngularJs;
-	\item Implémentation de plusieurs fonctionnalités telles qu’un système conventionnel de gestion d’utilisateurs avec des rôles et des droits;
-	\item Gestion de l’ensemble du projet de manière Agile avec des tâches et un "board".
-\end{itemize}
-
-
-{\sl Université Catholique de Lyon, Lyon, France}
-\hfill avril à mai 2013 \\
-Développeur au service informatique \hfill (Stage collégial)
-
-\begin{itemize} \itemsep -2pt
-	\item Création d’une application avec l’aide d’un ETL qui extrait les données d’une base de données, les modifient et les acheminent à la base de données du système d’éducation public français.
-	\item Analyse et remplacement d’un logiciel désuet dans le but de créer une application plus conforme et extensible.
-\end{itemize}
-
-
-{\sl Résidence du Carrefour, Saint-Jean-sur-Richelieu}
-\hfill septembre à mars 2013 \\
-Chef d'équipe \hfill (Projet de fin d'études collégials)
-
-\begin{itemize} \itemsep -2pt
-	\item Création d’une application web avec Java et JSP pour un client.
-	\item Conduire des sessions de travail avec le client pour définir les besoins et analyser les voies de solutions.
-	\item Présenter l’offre finale au client et traiter les demandes de changements.
-\end{itemize}
-
-\vspace{0.1in}
+	% Cegep
+	Cegep of Saint-Jean-sur-Richelieu, Saint-Jean-sur-Richelieu
+	\hfill 2010-2013 \\
+	{\sl Technique en informatique de gestion}
+}
 
 
 % --------------------------------
-\section{Connaissances informatique}
-\vspace{12pt}
+\inFrench{
+	\section{Expériences professionnelles}
+}
+\inEnglish{
+	\section{Professional experiences}
+}
+\vspace{6pt}
 
-Langages de programmation
-\begin{itemize}
-	\item Java, JavaScript, Python.
-\end{itemize}
+\inFrench{
+	% SFL
+	Savoir-faire Linux, Montréal
+	\hfill mai à septembre 2015 \\
+	{\sl Développeur} \hfill (Stage universitaire 2)
+	\vspace{0.05in}
 
-Logiciels maîtrisés
-\begin{itemize}
-	\item GNU/Linux, IntelliJ Idea (WebStorm, PyCharm), Vim.
-\end{itemize}
+	\begin{itemize} \itemsep -2pt
+		\item Développement d'une solution Python de "Monitoring as a Service" pour Openstack;
+		\item Maintien et développement d'une application AngularJs avec des vues configurables;
+		\item Création de paquets RPM (RedHat) pour l'installation de la solution;
+		\item Participation à un processus agile.
+	\end{itemize}
+
+	% Robotmaster
+	Jabez Technologies, Montréal
+	\hfill janvier à avril 2014 \\
+	{\sl Développeur web} \hfill (Stage universitaire 1)
+	\vspace{0.05in}
+
+	\begin{itemize} \itemsep -2pt
+		\item Conversion d’un site web en PHP vers une application web moderne en JavaScript avec NodeJs et AngularJs;
+		\item Implémentation de plusieurs fonctionnalités telles qu’un système conventionnel de gestion d’utilisateurs avec des rôles et des droits;
+		\item Gestion de l’ensemble du projet de manière Agile avec des tâches et un "board".
+	\end{itemize}
+
+	% Lyon
+	Université Catholique de Lyon, Lyon, France
+	\hfill avril à mai 2013 \\
+	{\sl Développeur au service informatique} \hfill (Stage collégial)
+	\vspace{0.05in}
+
+	\begin{itemize} \itemsep -2pt
+		\item Création d’une application avec l’aide d’un ETL qui extrait les données d’une base de données, les modifie et les achemine à la base de données du système d’éducation public français;
+		\item Analyse et remplacement d’un logiciel désuet dans le but de créer une application plus conforme et extensible.
+	\end{itemize}
+
+	% Carrefour
+	Résidences du Carrefour, Saint-Jean-sur-Richelieu
+	\hfill septembre à mars 2013 \\
+	{\sl Chef d'équipe} \hfill (Projet de fin d'études collégiales)
+	\vspace{0.05in}
+
+	\begin{itemize} \itemsep -2pt
+		\item Création d’une application web avec Java et JSP pour un client;
+		\item Conduire des sessions de travail avec le client pour définir les besoins et analyser les voies de solutions;
+		\item Présenter l’offre finale au client et traiter les demandes de changements.
+	\end{itemize}
+}
+
+\inEnglish{
+	% SFL
+	Savoir-faire Linux, Montreal
+	\hfill May to September 2015 \\
+	{\sl Software developer} \hfill (Second University Internship)
+	\vspace{0.05in}
+
+	\begin{itemize} \itemsep -2pt
+		\item Development of a solution of "Monitoring as a Service" for Openstack in Python.
+		\item Maintaining and development of an AngularJs application with configurable views.
+		\item Creation of RPM packets for installation of the solution on the Linux RedHat OS.
+		\item Active participation in an agile process.
+	\end{itemize}
+
+	% Robotmaster
+	Jabez Technologies, Montreal
+	\hfill January to April 2014 \\
+	{\sl Fullstack developer} \hfill (First University Internship)
+	\vspace{0.05in}
+
+	\begin{itemize} \itemsep -2pt
+		\item Rewrite of a PHP website in a single page application in AngularJs and NodeJs.
+		\item Creation of user and role base system.
+		\item Agile management of the project.
+	\end{itemize}
+
+	% Lyon
+	Catholic University of Lyon, Lyon, France
+	\hfill April to May 2013 \\
+	{\sl Software developer} \hfill (Collegial Internship)
+	\vspace{0.05in}
+
+	\begin{itemize} \itemsep -2pt
+		\item Use of an ETL (Talend Open Studio) to extract data from a database to another.
+		\item Replacement of old software for a scalable application.
+	\end{itemize}
+
+	% Carrefour
+	Résidences du Carrefour, Saint-Jean-sur-Richelieu
+	\hfill September to March 2013 \\
+	{\sl Team leader} \hfill (End of formation project)
+	\vspace{0.05in}
+
+	\begin{itemize} \itemsep -2pt
+		\item Meeting with client, elicitation of software requirements.
+		\item Validation of the final offer and handle change requests.
+		\item Creation of a Java Servlet application for the client.
+	\end{itemize}
+}
+
+
+% --------------------------------
+\inFrench{
+	\section{Connaissances informatiques}
+}
+\inEnglish{
+	\section{Software expertise}
+}
+\vspace{6pt}
+
+\inFrench{
+	Langages de programmation
+	\vspace{0.05in}
+	\begin{itemize}
+		\item JavaScript (NodeJs, AngularJs), Python, Java.
+	\end{itemize}
+
+	Logiciels maîtrisés
+	\vspace{0.05in}
+	\begin{itemize}
+		\item GNU/Linux, IntelliJ Idea (WebStorm, PyCharm), Vim.
+	\end{itemize}
+}
+
+\inEnglish{
+	Programming languages
+	\vspace{0.05in}
+	\begin{itemize}
+		\item JavaScript (NodeJs, AngularJs), Python, Java.
+	\end{itemize}
+
+	Softwares
+	\vspace{0.05in}
+	\begin{itemize}
+		\item GNU/Linux, IntelliJ Idea (WebStorm, PyCharm), Vim.
+	\end{itemize}
+}
 
 \newpage
 
 % --------------------------------
-\section{Projets accomplis}
-\vspace{8pt}
+% Beginning of page 2
+% --------------------------------
+\inFrench{
+	\section{Intérêts personnels}
+}
+\inEnglish{
+	\section{Personal interests}
+}
+\vspace{6pt}
 
-{\sl Membre du club Formule ÉTS} \hfill (Club étudiant)
-\begin{itemize} \itemsep -2pt
-	\item Création d’un document de vision ainsi qu’un document de spécification des requis pour une application de télémétrie en temps réel;
-	\item Prototypage de l’application en JavaScript
-\end{itemize}
+\inFrench{
+	\vspace{6pt}
+	\begin{itemize} \itemsep -2pt
+		\item Développement Linux Kernel;
+		\item Logiciels libres et open source;
+		\item Nouvelles informatiques et avancées technologiques;
+		\item Conception de jeux vidéos et ludification (gamification).
+	\end{itemize}
+}
 
-{\sl Membre du club Conjure} \hfill (Club étudiant)
-\begin{itemize} \itemsep -2pt
-	\item Création d’un jeu en C\# avec le logiciel Unity.
-	\item Gestion du projet.
-\end{itemize}
+\inEnglish{
+	\vspace{6pt}
+	\begin{itemize} \itemsep -2pt
+		\item Linux Kernel development.
+		\item Free software and open source.
+		\item Computer science news and advances.
+		\item Game design and gamification.
+	\end{itemize}
+}
 
-{\sl Création de contenus multimédia} \hfill (Projets personnel)
-\begin{itemize} \itemsep -2pt
-	\item Développement d’un jeu Android en Java avec la librairie LibGDX.
-	\item Création d’un clone de Geometry Wars en C\# avec le cadriciel XNA.
-	\item Publication d’une application Windows Phone en C\#.
-\end{itemize}
+% --------------------------------
+\inFrench{
+	\section{Implication scolaire et accomplissements}
+}
+\inEnglish{
+	\section{Scholar involvement and accomplishment}
+}
+\vspace{6pt}
 
-\vspace{0.1in}
+\inFrench{
+	{\sl Membre du club Formule ÉTS} \hfill (Club étudiant)
+	\vspace{0.05in}
+	\begin{itemize} \itemsep -2pt
+		\item Création d’un document de vision ainsi qu’un document de spécification des requis pour une application de télémétrie en temps réel;
+		\item Prototypage de l’application en JavaScript.
+	\end{itemize}
+
+	{\sl Membre du club Conjure} \hfill (Club étudiant)
+	\vspace{0.05in}
+	\begin{itemize} \itemsep -2pt
+		\item Création d’un jeu en C\# avec le logiciel Unity;
+		\item Gestion du projet.
+	\end{itemize}
+
+	{\sl Promotion du programme collégial} \hfill (Cégep)
+	\vspace{0.05in}
+	\begin{itemize} \itemsep -2pt
+		\item Entrevue avec le journal régional pour la promotion du programme collégial;
+		\item Participation aux portes ouvertes pour la présentation des projets accomplis durant mon parcours.
+	\end{itemize}
+
+	{\sl Création de contenu multimédia} \hfill (Projets personnels)
+	\vspace{0.05in}
+	\begin{itemize} \itemsep -2pt
+		\item Développement d’un jeu Android en Java avec la librairie LibGDX;
+		\item Création d’un clone de Geometry Wars en C\# avec le cadriciel XNA;
+		\item Publication d’une application Windows Phone en C\#.
+	\end{itemize}
+}
+
+\inEnglish{
+	{\sl Member of Formule ÉTS (racing car club)} \hfill (Student club)
+	\vspace{0.05in}
+	\begin{itemize} \itemsep -2pt
+		\item Creation of a vision document and a software requirements document for an application with reel-time telemetry.
+		\item Prototyping of the application in JavaScript.
+	\end{itemize}
+
+	{\sl Member of Conjure (video game creation club)} \hfill (Student club)
+	\vspace{0.05in}
+	\begin{itemize} \itemsep -2pt
+		\item Creation of a game in C\# with Unity.
+		\item Project management.
+	\end{itemize}
+
+	{\sl Cegep involvement} \hfill (Cegep)
+	\vspace{0.05in}
+	\begin{itemize} \itemsep -2pt
+		\item Interview with regional newspaper for the promotion of my course of study.
+		\item Presentation of the projects I have done in school to promote my program of study during the college open day.
+	\end{itemize}
+
+	{\sl Creation of multimedia content} \hfill (Personal projects)
+	\vspace{0.05in}
+	\begin{itemize} \itemsep -2pt
+		\item Game development of an Android game in Java.
+		\item Creation of a Geometry Wars clone in C\# with XNA framework.
+		\item Release of a Windows Phone application in C\#.
+	\end{itemize}
+}
 
 
 % --------------------------------
-\section{Expériences connexes}
-\vspace{12pt}
+\inFrench{
+	\section{Expériences connexes}
+}
+\inEnglish{
+	\section{Other experiences}
+}
+\vspace{6pt}
 
-{\sl Chef d'équipe, secteur restauration}
-	\hfill mai à août 2011, 2012 et 2013 \\
-Parc d'attraction La Ronde
+\inFrench{
+	{\sl Chef d'équipe, secteur restauration}
+		\hfill mai à août 2011, 2012 et 2013 \\
+	Parc d'attractions La Ronde
 
-\begin{itemize} \itemsep -2pt
-	\item Gestion et formation de 8 à 11 personnes.
-	\item Gestion des inventaires, des commandes et du fonctionnement de quatre points de vente.
-	\item Responsable d’une partie de la communication entre les superviseurs et les préposés.
-	\item Formation les nouveaux employés.
-\end{itemize}
+	\vspace{0.05in}
+	\begin{itemize} \itemsep -2pt
+		\item Gestion et formation de 8 à 11 personnes;
+		\item Gestion des inventaires, des commandes et du fonctionnement de quatre points de vente;
+		\item Responsable d’une partie de la communication entre les superviseurs et les préposés;
+		\item Formation des nouveaux employés.
+	\end{itemize}
 
 
-{\sl Cuisinier, secteur restauration}
-	\hfill mai à août 2010 \\
-Parc d'attraction La Ronde
+	{\sl Cuisinier, secteur restauration}
+		\hfill mai à août 2010 \\
+	Parc d'attractions La Ronde
 
-\begin{itemize} \itemsep -2pt
-	\item Gestion des périodes d’achalandages et de mon espace de travail.
-\end{itemize}
+	\vspace{0.05in}
+	\begin{itemize} \itemsep -2pt
+		\item Gestion des périodes d’achalandages et de mon espace de travail.
+	\end{itemize}
+}
+
+\inEnglish{
+	{\sl Team leader, restauration sector}
+		\hfill May to August 2011, 2012 and 2013 \\
+	Amusement park, La Ronde
+
+	\vspace{0.05in}
+	\begin{itemize} \itemsep -2pt
+		\item Management and formation of 8 to 11 employees.
+		\item Inventory, command and sales management of four points of sale.
+		\item Responsible of part of the communication between supervisors and employees.
+	\end{itemize}
+
+
+	{\sl Cook, restauration sector}
+		\hfill May to August 2010 \\
+	Amusement park, La Ronde
+
+	\vspace{0.05in}
+	\begin{itemize} \itemsep -2pt
+		\item Management of the rush hours and of my work space.
+	\end{itemize}
+}
 
 \vspace{0.1in}
-
-
-% --------------------------------
-\section{Réalisations}
-\vspace{12pt}
-
-\begin{itemize} \itemsep -2pt
-	\item Promotion du programme collégial de technique informatique;
-	\item Choisi par le coordonnateur du programme pour faire une entrevue avec le journal régional pour la promotion du programme collégial;
-	\item Participation aux portes ouvertes pour la présentation des projets accomplis durant mon parcours.
-\end{itemize}
 
 \end{resume}
 \end{document}
