@@ -4,8 +4,8 @@
 \usepackage{fancyhdr}  % use this package to get a 2 line header
 \usepackage[utf8]{inputenc}
 \renewcommand{\headrulewidth}{0pt} % suppress line drawn by default by fancyhdr
-\newcommand{\inFrench}[1]{#1}
-\newcommand{\inEnglish}[1]{}
+\newcommand{\inFrench}[1]{}
+\newcommand{\inEnglish}[1]{#1}
 \setlength{\headheight}{24pt} % allow room for 2-line header
 \setlength{\headsep}{16pt}  % space between header and text
 \setlength{\headheight}{24pt} % allow room for 2-line header
@@ -20,16 +20,16 @@
 {\bf\huge Vincent Fournier}
 \inFrench{
 	\hfill \textbf {github.com/ntfournier} \\
-	Étudiant en génie logiciel à l’École de technologie supérieure.
+	Nouveau diplomé en génie logiciel de l’École de technologie supérieure.
 	\hfill \textbf {vince@ntfournier.com} \\
-	Disponible pour stage universitaire 3 en \textbf{mai 2016} pour une durée 4 ou 8 mois.
+	Disponible pour emploi temps plein à partir de \textbf{mai 2017}.
 	\hfill \textbf {tel}: 514-949-8462 \\
 }
 \inEnglish{
 	\hfill \textbf {github.com/ntfournier} \\
-	Software engineering student at l'École de technologie supérieure.
+	New graduate in software engineering from l'École de technologie supérieure.
 	\hfill \textbf {vince@ntfournier.com} \\
-	Available for third university internship in \textbf{May 2016} for a length 4 or 8 months.
+	Available for full-time employment in \textbf{May 2017}.
 	\hfill \textbf {tel}: 514-949-8462 \\
 }
 \vspace{-15pt}
@@ -42,7 +42,7 @@
 \inFrench{
 	% Bacc
 	École de technologie supérieure (ÉTS), Montréal
-	\hfill Depuis septembre 2013 \\
+	\hfill 2013-2017 \\
 	{\sl Baccalauréat en génie logiciel}
 
 	% Cegep
@@ -53,7 +53,7 @@
 \inEnglish{
 	% Bacc
 	École de technologie supérieure (ÉTS), Montreal
-	\hfill Since September 2013 \\
+	\hfill 2013-2017 \\
 	{\sl Bachelor in Software Engineering}
 
 	% Cegep
@@ -73,6 +73,19 @@
 \vspace{6pt}
 
 \inFrench{
+	% Ericsson
+	Ericsson, Montréal\footnotemark
+	\hfill mai à septembre 2016 \\
+	{\sl Développeur Java} \hfill (Stage universitaire 3)
+	\vspace{0.05in}
+
+	\begin{itemize} \itemsep -2pt
+		\item Ajout de fonctionnalités dans une API d'IPTV (Java);
+		\item Création et amélioration d'utilitaires pour tests (Bash, JavaScript, Python et Perl);
+		\item Développement d'une application de contrôle d'accès à base de rôles (RBAC) en Python;
+		\item Fonctionnalités d'exportation et d'importation de données d'un serveur LDAP à des serveurs Linux.
+	\end{itemize}
+
 	% SFL
 	Savoir-faire Linux, Montréal
 	\hfill mai à septembre 2015 \\
@@ -87,7 +100,7 @@
 	\end{itemize}
 
 	% Robotmaster
-	Jabez Technologies, Montréal
+	Jabez Technologies, Montréal\footnotemark[\value{footnote}]
 	\hfill janvier à avril 2014 \\
 	{\sl Développeur web} \hfill (Stage universitaire 1)
 	\vspace{0.05in}
@@ -117,12 +130,27 @@
 
 	\begin{itemize} \itemsep -2pt
 		\item Création d’une application web avec Java et JSP pour un client;
-		\item Conduire des sessions de travail avec le client pour définir les besoins et analyser les voies de solutions;
+		\item Conduire des sessions de travail avec le client pour définir les besoins;
 		\item Présenter l’offre finale au client et traiter les demandes de changements.
 	\end{itemize}
+
+	\footnotetext{Environnement de travail bilingue}
 }
 
 \inEnglish{
+	% Ericsson
+	Ericsson, Montréal\footnotemark
+	\hfill May to September 2016 \\
+	{\sl Java developer} \hfill (Third University Internship)
+	\vspace{0.05in}
+
+	\begin{itemize} \itemsep -2pt
+		\item Implementation of a new endpoint for REST API of an IPTV solution;
+		\item Creation and improvment of tests utilities (Bash, JavaScript, Python and Perl);
+		\item Development of a Role-based access control application (RBAC) in Python;
+		\item Implementation of Import/Export fonctionnalities from an LDAP server to a list of Linux servers.
+	\end{itemize}
+
 	% SFL
 	Savoir-faire Linux, Montreal
 	\hfill May to September 2015 \\
@@ -137,7 +165,7 @@
 	\end{itemize}
 
 	% Robotmaster
-	Jabez Technologies, Montreal
+	Jabez Technologies, Montreal\footnotemark[\value{footnote}]
 	\hfill January to April 2014 \\
 	{\sl Fullstack developer} \hfill (First University Internship)
 	\vspace{0.05in}
@@ -170,8 +198,11 @@
 		\item Validation of the final offer and handle change requests.
 		\item Creation of a Java Servlet application for the client.
 	\end{itemize}
+
+	\footnotetext{Bilingual work environment}
 }
 
+\newpage
 
 % --------------------------------
 \inFrench{
@@ -186,13 +217,13 @@
 	Langages de programmation
 	\vspace{0.05in}
 	\begin{itemize}
-		\item JavaScript (NodeJs, AngularJs), Python, Java.
+		\item Java, Python, JavaScript (NodeJs, AngularJs), Bash.
 	\end{itemize}
 
 	Logiciels maîtrisés
 	\vspace{0.05in}
 	\begin{itemize}
-		\item GNU/Linux, IntelliJ Idea (WebStorm, PyCharm), Vim.
+		\item GNU/Linux, IntelliJ Idea (WebStorm, PyCharm), Vim, Git, Gerrit, Github, Éclipse.
 	\end{itemize}
 }
 
@@ -200,17 +231,16 @@
 	Programming languages
 	\vspace{0.05in}
 	\begin{itemize}
-		\item JavaScript (NodeJs, AngularJs), Python, Java.
+		\item Java, Python, JavaScript (NodeJs, AngularJs), Bash.
 	\end{itemize}
 
 	Softwares
 	\vspace{0.05in}
 	\begin{itemize}
-		\item GNU/Linux, IntelliJ Idea (WebStorm, PyCharm), Vim.
+		\item GNU/Linux, IntelliJ Idea (WebStorm, PyCharm), Vim, Git, Gerrit, Github, Eclipse.
 	\end{itemize}
 }
 
-\newpage
 
 % --------------------------------
 % Beginning of page 2
@@ -226,9 +256,10 @@
 \inFrench{
 	\vspace{6pt}
 	\begin{itemize} \itemsep -2pt
-		\item Développement Linux Kernel;
 		\item Logiciels libres et open source;
+		\item Développement Linux Kernel et projet Debian;
 		\item Nouvelles informatiques et avancées technologiques;
+		\item Utilisation des technologies dans un contexte social;
 		\item Conception de jeux vidéos et ludification (gamification).
 	\end{itemize}
 }
@@ -236,8 +267,9 @@
 \inEnglish{
 	\vspace{6pt}
 	\begin{itemize} \itemsep -2pt
-		\item Linux Kernel development.
 		\item Free software and open source.
+		\item Linux Kernel development and Debian project.
+		\item Uses of technologies in society.
 		\item Computer science news and advances.
 		\item Game design and gamification.
 	\end{itemize}
@@ -257,7 +289,7 @@
 	\vspace{0.05in}
 	\begin{itemize} \itemsep -2pt
 		\item Création d’un document de vision ainsi qu’un document de spécification des requis pour une application de télémétrie en temps réel;
-		\item Prototypage de l’application en JavaScript.
+		\item Prototypage d'une application de télémétrie en temps-réel en JavaScript.
 	\end{itemize}
 
 	{\sl Membre du club Conjure} \hfill (Club étudiant)
@@ -331,7 +363,7 @@
 
 	\vspace{0.05in}
 	\begin{itemize} \itemsep -2pt
-		\item Gestion et formation de 8 à 11 personnes;
+		\item Gestion et formation continue de 8 à 11 personnes;
 		\item Gestion des inventaires, des commandes et du fonctionnement de quatre points de vente;
 		\item Responsable d’une partie de la communication entre les superviseurs et les préposés;
 		\item Formation des nouveaux employés.
